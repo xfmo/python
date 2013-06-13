@@ -5,8 +5,13 @@ rootdir='/home/xfmo/my_python_test/'
 print rootdir
 for file in os.listdir(rootdir):
     print file
-    f=open(file)
-    line=f.readline()
-   # while line :
-    #    print line
-     #   line=f.readline()
+    if os.path.isfile(file):
+       f=open(file)
+      # print f.readlines()
+def readfile(path):
+    f=open(path)
+    for l in f.readlines():
+        print l
+    f.close()
+if __name__=="__main__":
+    readfile(os.path.join(rootdir,'lambda.py'))
