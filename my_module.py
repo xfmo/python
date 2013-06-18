@@ -1,5 +1,7 @@
 #! /usr/bin/python
 # -*-coding:utf-8-*-
+import os
+
 print  "this is first module"
 print __name__
 
