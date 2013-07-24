@@ -28,3 +28,13 @@ python 函数是对象
 li = []
 getattr(li,"append")("more")
 
+
+
+
+
+
+
+
+
+python 工具
+  覆盖代码工具 coverage

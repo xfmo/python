@@ -8,6 +8,7 @@ def mean(sorted_list):
         return (([],[]))
     big = sorted_list[-1]
     small = sorted_list[-2]
+    print i,big,small,sorted_list
     big_list,small_list = mean(sorted_list[:-2])
     big_list.append(small)
     small_list.append(big)
